@@ -17,6 +17,18 @@
  *      => false // the double-letters have to be next to eachother
 **/
 
+
+function hasDoubleLetters(string){
+  let double = false
+  let word = string.toUpperCase()
+    for (let i = 0; i < word.length; i ++){
+      if (word[i] === word[i+1]) {
+        double = true 
+      }
+    }
+    return double
+}
+
 console.group('JS Iterations Week');
   console.log('Function: hasDoubleLetters', 'background-color: green; color: white')
   console.groupCollapsed('Should return true for "shutter"');

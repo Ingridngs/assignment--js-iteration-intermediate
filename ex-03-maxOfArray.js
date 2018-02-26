@@ -6,6 +6,17 @@
  *
 **/
 
+function maxOfArray (array){
+  let son= 0
+  for (let i = 0; i < array.length; i++){
+    if ( son < array[i]) {
+      son = array[i]
+      
+    }
+  }
+  return array
+}
+
 
 console.group('JS Iterations Week');
   console.log('%cFunction: maxOfArray', 'background-color: green; color: white')

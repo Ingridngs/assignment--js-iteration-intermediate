@@ -6,6 +6,21 @@
  *
 */
 
+function sumPositives(group){
+  let add = 0
+  for(let i = 0; i < group.length; i++ ){
+      if (group[i] >= 0) {
+        console.log(group[i])
+        add += group[i]
+      }
+
+  }
+
+  return add
+}
+
+
+
 console.group('JS Iterations Week');
   console.log('%cFunction: sumPositives', 'background-color: green; color: white')
   console.groupCollapsed('Should return 12 in the next [3, -1, 4, 5, -3, -4] series');

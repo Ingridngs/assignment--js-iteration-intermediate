@@ -11,6 +11,24 @@
  *    sumDigits(406) => 10
  **/
 
+ 
+function sumDigits (group) {
+ let letters = group.toString();
+ let lettersArray = letters.split("")
+  //console.log(letrasArray)
+  let suma = 0
+  let result = 0
+
+  for(let i = 0; i < lettersArray.length; i++ ){
+   //console.log(letrasArray[i])
+
+  suma = parseInt(lettersArray[i])
+  result += suma
+  
+    
+  }
+  return result
+
 console.group('JS Iterations Week');
   console.log('%cFunction: sumDigits', 'background-color: green; color: white')
   console.groupCollapsed('Should return 6 from "123"');
